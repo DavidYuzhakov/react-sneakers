@@ -25,7 +25,7 @@ export default function FavoritesPage () {
       <div className="flex items-center mb-10">
         <Link to={'/'}>
           <button type="button">
-            <img src="/img/icons/arrow-left.svg" alt="back" />
+            <img src="img/icons/arrow-left.svg" alt="back" />
           </button>
         </Link>
         <h1 className="text-black md:text-[32px] text-[28px] font-bold md:ml-5 ml-3">Мои Закладки</h1>

@@ -15,7 +15,7 @@ export function DrawerCard ({ id, image, name, price }: DrawerCardProps) {
     <div className="relative p-[20px] flex rounded-[20px] border border-[#F3F3F3] w-full mb-5">
       <img
         className="mr-[20px]"
-        src={`/img/sneakers/sneakers-${image}`}
+        src={`img/sneakers/sneakers-${image}`}
         width={70}
         height={70}
         alt="sneaker"
@@ -29,7 +29,7 @@ export function DrawerCard ({ id, image, name, price }: DrawerCardProps) {
         className="absolute right-5 bottom-5"
         type="button"
       >
-        <img src="/img/icons/remove.svg" alt="remove" />
+        <img src="img/icons/remove.svg" alt="remove" />
       </button>
     </div>
   )

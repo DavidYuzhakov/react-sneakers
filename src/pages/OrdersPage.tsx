@@ -30,7 +30,7 @@ export default function OrdersPage () {
       <div className="flex items-center mb-10">
         <Link to={'/'}>
           <button type="button">
-            <img src="/img/icons/arrow-left.svg" alt="back" />
+            <img src="img/icons/arrow-left.svg" alt="back" />
           </button>
         </Link>
         <h1 className="text-black text-[32px] font-bold ml-5">Мои покупки</h1>

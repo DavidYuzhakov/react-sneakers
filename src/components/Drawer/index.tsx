@@ -54,7 +54,7 @@ export default function Drawer() {
         <div className="flex items-center justify-between mb-[30px]">
             <h2 className="text-2xl font-bold ">Корзина</h2>
             <button onClick={() => dispatch(setOpen(false))} type="button">
-              <img src="/img/icons/remove.svg" alt="close" />
+              <img src="img/icons/remove.svg" alt="close" />
             </button>
         </div>
         <div className="h-[85%] overflow-auto">
@@ -83,7 +83,7 @@ export default function Drawer() {
               </span>
               <img
                 className="absolute top-[21px] bottom-[21px] right-[40px]"
-                src="/img/icons/order-arrow.svg"
+                src="img/icons/order-arrow.svg"
                 alt="arrow"
               />
             </button>
