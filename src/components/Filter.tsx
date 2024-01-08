@@ -80,7 +80,7 @@ export function Filter ({ setSearchParams }: FilterProps) {
         </ul>
       </div>
       <div className="min-[440px]:max-w-[250px] w-full flex items-center rounded-[10px] border border-[#F3F3F3] py-[14px] px-[18px]">
-        <img className="mr-[10px] cursor-pointer" src="/img/icons/search.svg" alt="search" />
+        <img className="mr-[10px] cursor-pointer" src="img/icons/search.svg" alt="search" />
         <input 
           ref={input}
           className="text-sm outline-none placeholder:text-[#C4C4C4] w-full"
