@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #E7F6FF;
+  font-family: Inter;
+  scrollbar-gutter: stable;
+}
+
+body._modal {
+  overflow: hidden;
+}
+
+.s-container {
+  padding: 45px 60px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 207px);
+  gap: 40px;
+}
+
+@media (max-width: 991px) {
+  .s-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-container {
+    padding: 30px 16px;
+  }
+  .content {
+    gap: 20px;
+  }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.burger {
+  position: relative;
+  width: 15px;
+  height: 12px;
+}
+
+.burger span, 
+.burger::before, 
+.burger::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+
+  background-color: #333;
+  transition: all .3s ease;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger span {
+  top: 50%;
+  translate: 0 -50% 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger._active span {
+  scale: 0;
+}
+
+.burger._active::before {
+  top: 50%;
+  translate: 0 -50% 0;
+  rotate: 45deg;
+}
+
+.burger._active::after {
+  top: 50%;
+  translate: 0 -50% 0;
+  rotate: -45deg;
+}
+
