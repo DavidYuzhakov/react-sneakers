@@ -18,9 +18,10 @@ body._modal {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 207px);
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   gap: 40px;
 }
+
 
 @media (max-width: 991px) {
   .s-container {

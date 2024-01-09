@@ -41,7 +41,7 @@ export function Filter ({ setSearchParams }: FilterProps) {
     }
     setOpen(false)
   }
-
+ 
   
   useEffect(() => {
     function closeHandler (event: MouseEvent) {

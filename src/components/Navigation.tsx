@@ -27,7 +27,7 @@ export function Navigation () {
       <button onClick={() => setIsOpen(prev => !prev)} className={`burger ${isOpen ? '_active': ''} sm:hidden`} type="button">
         <span></span>
       </button>
-      <ul className={`${isOpen ? 'max-sm:opacity-100 max-sm:visible max-sm:translate-y-0' : ' max-sm:opacity-0 max-sm:invisible max-sm:-translate-y-6'} sm:flex sm:items-center max-sm:absolute max-sm:top-[90%] max-sm:right-4 max-sm:bg-[#E7F6FF] max-sm:rounded-md p-3 duration-300`}>
+      <ul className={`${isOpen ? 'max-sm:opacity-100 max-sm:visible max-sm:translate-y-0' : ' max-sm:opacity-0 max-sm:invisible max-sm:-translate-y-6'} sm:flex sm:items-center max-sm:absolute max-sm:top-[90%] max-sm:right-4 max-sm:z-10 max-sm:bg-[#E7F6FF] max-sm:rounded-md p-3 duration-300`}>
         <li onClick={() => dispatch(setOpen(true))} className="flex cursor-pointer max-sm:my-3 mr-8">
           <img className="mr-[10px]" src="img/icons/cart.svg" alt="cart" />
           <span className="font-semibold text-[#5C5C5C] sm:text-[14px]">{ totalPrice } ₽</span>
